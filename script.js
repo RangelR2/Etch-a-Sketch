@@ -17,7 +17,7 @@ pageCanvas.setAttribute('style','display: flex; margin: 1%; margin-left: 15%; ma
 const buttonsDiv = document.createElement('buttonsDiv');
 buttonsDiv.classList.add('div');
 pageCanvas.appendChild(buttonsDiv);
-buttonsDiv.setAttribute('style', 'margin: 1%; padding-right: 15%; font-family: "Roboto", sans-serif; border: 2px solid black; display: flex; height: 97%; align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: space-around;');
+buttonsDiv.setAttribute('style', 'margin: 1%; padding-right: 15%; font-family: "Roboto", sans-serif; border: 2px solid black;height: 97%; align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: center;');
 
 // ('style', 'font-family: "Roboto", sans-serif; border: 2px solid black; display: flex;
 // height: 100%; align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: space-around;');
@@ -27,8 +27,10 @@ CanvasDiv.classList.add('CanvasDiv');
 pageCanvas.appendChild(CanvasDiv);
 CanvasDiv.setAttribute('style','padding-right: 71%; margin: 1%; height: 97%; border: 2px solid blue;');
 
+
+
 const resetButton = document.createElement('resetButton');
 resetButton.classList.add('button');
 resetButton.textContent = 'Start!';
 buttonsDiv.appendChild(resetButton);
-resetButton.setAttribute('style', 'font-family: "Roboto", sans-serif; background-color: white; padding:20px; padding-left: 30px; padding-right: 30px; border-radius: 15px;font-size: 20px; cursor: pointer; align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: space-around;');
+resetButton.setAttribute('style', 'font-family: "Roboto", sans-serif; background-color: white; padding:20px; padding-left: 30px; padding-right: 30px; border-radius: 15px;font-size: 20px; cursor: pointer; align-items: center; flex-direction: row; flex-wrap: wrap; justify-content: center');
