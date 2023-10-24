@@ -8,3 +8,19 @@ body{
     flex-wrap: wrap; 
     justify-content: center;
 }
+
+.grid {
+    display: flex;  /* <--- required */
+}
+
+.column {
+    flex: 1;  /* <--------- required (makes each column with the same width) */
+}
+
+.cell {
+    margin: 2px;
+    background: gold;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 10%;
+}
