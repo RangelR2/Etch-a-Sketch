@@ -8,6 +8,18 @@
     <script src="script.js" defer="defer"></script>
 </head>
 <body>
-    <div id="container" class="container"></div>
+    <div id="container" class="container">
+        <div class="content">
+            <h1>Etch-a-Sketch Project</h1>
+        </div>
+        <div class="pageCanvas">
+            <div class="buttonsDiv">
+                <input type="text" value="16" placeholder="Size" onchange="changeSize(this.value)">        
+                <button>Set Size</button>                         
+            </div>
+            <div id="canvasDiv" class="canvasDiv">   
+            </div>
+        </div>
+    </div>
 </body>
 </html>
