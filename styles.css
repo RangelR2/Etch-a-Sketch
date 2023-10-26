@@ -79,6 +79,8 @@ h2{
 
 .greyButton{
     color: grey;
+    margin-top: 10%;
+    margin-bottom: -10%;
 }
 
 .setSize{
@@ -87,12 +89,17 @@ h2{
 }
 
 .blackButton{
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .randomButton{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
+
+.whiteButton{
+    margin-bottom: -115%;
+}
+
 
 .resetButton{
     margin-top: 5%;
