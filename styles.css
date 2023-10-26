@@ -59,7 +59,11 @@
 }
 
 input{
-    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: -2px 2px 1px black;
+    padding-left: 5%;
+    padding-right: 5%; 
+    margin-left: -6%;
 }
 
 button{
@@ -71,9 +75,26 @@ button{
 }
 
 h2{
+    margin-top: -20%;
     font-family: "Roboto", sans-serif; 
 }
 
 .greyButton{
     color: grey;
+}
+
+.setSize{
+    margin-bottom: 10%;
+}
+
+.blackButton{
+    margin-top: 10%;
+}
+
+.randomButton{
+    margin-bottom: 10%;
+}
+
+.resetButton{
+    margin-top: 12%;
 }

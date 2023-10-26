@@ -14,12 +14,16 @@
         </div>
         <div class="pageCanvas">
             <div class="buttonsDiv">
-                <h2>Define</h2>
-                <input type="text" placeholder="Size" value="16" onchange="changeSize(this.value)">        
-                <button id="setSize">Set Size!</button> 
+                <h2>Define <br> Resolution</h2>
+                
+                <input type="text" placeholder="Max 100px" value="" onchange="changeSize(this.value)" id="input">        
+                <button id="setSize" class="setSize">Set Size!</button> 
+                <hr>
                 <button id="blackButton" class="blackButton"><strong>Black</strong></button><br>
                 <button id="greyButton" class="greyButton"><strong>Grey</strong></button><br>
-                <button id="whiteButton" class="whiteButton"><strong></strong>White</strong></button><br>     
+                <button id="whiteButton" class="whiteButton"><strong></strong>White</strong></button><br>   
+                <button id="randomButton" class="randomButton"><strong></strong>Random</strong></button><br>  
+                <hr> 
                 <button id="resetButton" class="resetButton"><strong></strong>Reset</strong></button>             
             </div>
             <div id="canvasDiv" class="canvasDiv">   
