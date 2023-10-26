@@ -116,6 +116,7 @@ function changeSize(input) {
         fillBoard(input);
     } else {
         alert("Pixel limit exceed!");
+        console.log("Pixel limit exceed!");
     }
 }
 
