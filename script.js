@@ -112,11 +112,10 @@ resetButton.addEventListener('mouseout', () => {
 fillBoard(16);
 
 function changeSize(input) {
-    if (input <= 100 || input > 1) {
+    if (input > 1 && input <= 100) {
         fillBoard(input);
     } else {
-        alert("mt quadrado");
-        console.log('grande ein');
+        alert("Pixel limit exceed!");
     }
 }
 
