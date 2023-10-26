@@ -57,3 +57,19 @@
     flex-wrap: wrap; 
     justify-content: center;
 }
+
+input{
+    border-radius: 10px;
+}
+
+button{
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: -3px 3px 2px black; 
+    padding: 13px 18px 13px 18px;
+    margin-top: 25%;
+}
+
+h2{
+    font-family: "Roboto", sans-serif; 
+}
