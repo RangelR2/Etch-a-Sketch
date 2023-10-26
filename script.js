@@ -9,17 +9,31 @@ function fillBoard(size) {
     for (let i = 0; i < amount; i++) {
         let square = document.createElement('div');
         square.addEventListener('mouseover', () => {
-            square.setAttribute('style', 'background-color: rgb(255, 0, 127);');
+            square.setAttribute('style', 'background-color: blue;');
         });
-        square.setAttribute('style', 'background-color: pink;');
+        square.setAttribute('style', 'background-color: white;');
         board.insertAdjacentElement("beforeend", square);
 
         const blackButton = document.querySelector('#blackButton');
         blackButton.addEventListener('click', () => {
-            console.log('teste');
-            square.setAttribute('style', 'background-color: black;');
-        });
+            square.addEventListener('mouseover', () => {
+                square.setAttribute('style', 'background-color: black;');
+            });
 
+
+        });
+        const greyButton = document.querySelector('#greyButton');
+        greyButton.addEventListener('click', () => {
+            square.addEventListener('mouseover', () => {
+                square.setAttribute('style', 'background-color: grey;');
+            });
+        });
+        const whiteButton = document.querySelector('#whiteButton');
+        whiteButton.addEventListener('click', () => {
+            square.addEventListener('mouseover', () => {
+                square.setAttribute('style', 'background-color: white;');
+            });
+        });
     }
 }
 
@@ -40,5 +54,10 @@ sizeButton.addEventListener('mouseover', () => {
 
 sizeButton.addEventListener('mouseout', () => {
     sizeButton.setAttribute('style', 'background-color: white;');
+});
+
+const resetButton = document.querySelector('#resetButton');
+resetButton.addEventListener('click', () => {
+    square.setAttribute('style','background-color: white;');
 });
 
