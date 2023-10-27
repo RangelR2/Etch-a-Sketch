@@ -1,3 +1,5 @@
+document.querySelector('.error').style.display = "none";
+
 function fillBoard(size) {
     let board = document.querySelector(".canvasDiv");
     let squares = board.querySelectorAll('div')
@@ -113,10 +115,10 @@ fillBoard(16);
 
 function changeSize(input) {
     if (input > 1 && input <= 100) {
+        document.querySelector('.error').style.display = "none";
         fillBoard(input);
     } else {
-        alert("Pixel limit exceed!");
-        console.log("Pixel limit exceed!");
+        document.querySelector('.error').style.display = "flex";
     }
 }
 
